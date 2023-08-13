@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 import App from './components/app/app'
 import ErrorBountry from './components/error-boundry/error-bountry'
-import BookStoreService from './srvices/bookStore'
+import { BookStoreService } from './srvices/bookStore'
 import { BookStoreServiceProvider } from './components/component-context/context'
 
 import Store from "./store";

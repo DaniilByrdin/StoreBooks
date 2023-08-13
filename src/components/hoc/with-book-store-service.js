@@ -7,10 +7,10 @@ export const WithBooksStoreService = () => (Wrapped) => {
         return (
             <BookStoreServiceConsimer>
                 {
-                    (BookStoreService) => {
+                    (bookstoreService) => {
                         return (
                             <Wrapped {...props}
-                                        BookStoreService = { BookStoreService } />
+                            bookstoreService = { bookstoreService } />
                         )
                     }
                 }

@@ -3,7 +3,8 @@ import React from "react";
 import './app.css'
 import { Route, Routes } from "react-router";
 
-import { HomePage, CardPage } from '../pages/index'
+import HomePage  from '../pages/homePage'
+import CardPage from '../pages/cardPage'
 
 const App = ( ) => {
 

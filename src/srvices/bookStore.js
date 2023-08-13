@@ -1,9 +1,6 @@
 
 
-class BookStoreService {
-
-
-
+export class BookStoreService {
 
     getBooks() {
         return [
@@ -21,4 +18,4 @@ class BookStoreService {
     }
 }
 
-export default BookStoreService
+// export default BookStoreService

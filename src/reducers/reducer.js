@@ -1,5 +1,16 @@
 const initialState = {
-    books: [],
+    books: [
+        // {
+        //     id: 1,
+        //     title: 'Poduction-Ready Microservices',
+        //     author: 'Susan J. Fowler'
+        // },
+        // {
+        //     id: 2,
+        //     title: 'Release IT',
+        //     author: 'Michael T.Nygard'
+        // }
+    ],
 }
 
 const Reducer = ( state = initialState, action ) => {
