@@ -31,7 +31,7 @@ class BookList extends Component {
         const { books } = this.props
 
         return (
-        <ul>
+        <ul className="book-list">
             {
                 books.map( (book) => {
                     return (
