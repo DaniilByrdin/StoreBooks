@@ -12,7 +12,7 @@ import compose  from '../../utils/compose';
 import { fetchBooks, onAddedToCart } from '../../actions/action'
 
 
-const BookList = ({books, onAddedToCart }) => {
+const BookList = ( {books, onAddedToCart } ) => {
     return (
         <ul className="book-list">
             {
@@ -54,9 +54,9 @@ class BookListContainer extends Component {
 
 const MapStateToProps = (state) => {
     return {
-        books: state.books,
-        loading: state.loading,
-        error: state.error
+        books: state.bookList.books,
+        loading: state.bookList.loading,
+        error: state.bookList.error
     }
 }
 
@@ -65,7 +65,6 @@ const MapDispatchToProps = (dispatch, ownProps) => {
     return {
         fetchBooks: fetchBooks( bookstoreService, dispatch ),
         onAddedToCart: (id) => dispatch(onAddedToCart(id)),
-        
     }
 }
 

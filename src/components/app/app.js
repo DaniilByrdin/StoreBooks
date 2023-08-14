@@ -24,8 +24,8 @@ const App = ({orderTotal, totalItems}) => {
 
 const mapStateToProps = (state) => {
     return {
-        orderTotal: state.orderTotal,
-        totalItems: state.totalItems
+        orderTotal: state.shoppingCart.orderTotal,
+        totalItems: state.shoppingCart.totalItems
     }
 }
 
