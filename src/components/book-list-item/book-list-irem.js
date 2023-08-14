@@ -1,4 +1,5 @@
-import React, { Fragment } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 
 import './book-list-item.css'
 
@@ -9,16 +10,16 @@ const BookListItem = ({ book }) => {
     return (
         <div className="book-list-item">
             <div className="book-cover">
-                <img src={coverImage} alt="cover"/ >
+                <img src={coverImage} alt="cover" />
             </div>
             <div className="book-details">
-                <a href="#" className="book-title" > {author} </a>
+                <Link to="#" className="book-title"> {author} </Link>
                 <div className="book-aithor"> {title} </div>
                 <div className="book-price"> {price} </div>
                 <button className="btn btn-info add-to-cart">Add to cart</button>
             </div>
         </div>
     )
-}
+} 
 
 export default BookListItem
